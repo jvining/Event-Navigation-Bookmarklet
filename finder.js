@@ -8,16 +8,16 @@ javascript: (function(e, a, g, h, f, c, b, d) {if (!(f = e.jQuery) || g > f.fn.j
 			'<li class="list-group-item"><a target="_blank" ' + emsURL + 'EventUpdate.aspx?event=' + eventNumber + emsLang + '"> Event Update</a></li>' + 
 			'<li class="list-group-item"><a target="_blank" ' + emsURL + 'EventDynamicPage.aspx?event=' + eventNumber + emsLang + '">Event Page</a></li>' + 
 			'<li class="list-group-item"><a target="_blank" ' + emsURL + 'EventDynamicPages.aspx?event=' + eventNumber + emsLang + '"> Event Page(s)</a></li>' + 
-			'<li class="list-group-item"><a target="_blank" ' + emsURL + 'NavigationManagement.aspx?event=' + eventNumber + emsLang + '"> Navigation</a></li>' + 
-			'<li class="list-group-item"><a target="_blank" ' + emsURL + 'Manage301Redirect.aspx?event=' + eventNumber + emsLang + '"> Manage Redirection</a></li>' + 
 			'<li class="list-group-item"><a target="_blank" ' + emsURL + 'EventDynamicContent.aspx?event=' + eventNumber + emsLang + '">Event Content</a></li>' + 
+			'<li class="list-group-item"><a target="_blank" ' + emsURL + 'NavigationManagement.aspx?event=' + eventNumber + emsLang + '"> Navigation</a></li>' + 
 			'<li class="list-group-item"><a target="_blank" ' + emsURL + 'ApprovalPage.aspx?event=' + eventNumber + '&langID=1033&user=all">Approval Page</a></li>' + 
 			'<li class="list-group-item"><a target="_blank" ' + emsURL + 'MediaCentre.aspx?event=' + eventNumber + emsLang + '">Resource Center</a></li>' + 
+			'<li class="list-group-item"><a target="_blank" ' + emsURL + 'Manage301Redirect.aspx?event=' + eventNumber + emsLang + '"> Manage Redirection</a></li>' + 
 			'<li class="list-group-item"><a target="_blank" ' + emsURL + 'managepricing.aspx?event=' + eventNumber + emsLang + '">V2 Pricing Admin</a></li>' + 
 			'<li class="list-group-item"><a target="_blank" ' + 'href="https://register.wbresearch.com/srspricing.aspx?eventid=' + eventNumber + '">V2 Pricing Page</a></li>' + 
-			'<li class="list-group-item"><a href="?preview=true" class="btn btn-sm btn-warning btn-block">Refresh Preview</a></li>' + 
-			'<li class="list-group-item"><a onclick="window.location.reload(true);" class="btn btn-sm btn-success btn-block">Refresh</a></li>' + 
-		'</ul>'));} 
+			'<li class="list-group-item"><a href="?preview=true" class="btn btn-md btn-warning btn-block"><i class="fa fa-refresh" aria-hidden="true"></i> Preview</a></li>' + 
+			'<li class="list-group-item"><a href="javascript:window.location.reload(true)" class="btn btn-md btn-success btn-block"><i class="fa fa-refresh" aria-hidden="true"></i></a></li>' + 
+ 		'</ul>'));} 
 	else {
 		$('body').append('<div class="panel-closer" style="position:fixed!important;top:0px!important;z-index:999999999999!important;text-align:center!important;height:40px!important;width:100%!important;background:#ff0000!important;color:#fff!important;font-size:20px!important;padding:10px!important;">This is not an EMS site</div>');}
 		$('.panel-closer').click(function() {$('#CurrentEventId').addClass('hidden');$(this).addClass('hidden')
